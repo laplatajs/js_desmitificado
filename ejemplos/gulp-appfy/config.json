@@ -11,6 +11,6 @@
   },
   "notify" : {
     "onError": true,
-    "onUpdated": true
+    "onUpdated": false
   }
 }
