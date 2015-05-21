@@ -13,5 +13,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "colour": "^0.7.1",
+    "figlet": "^1.1.0"
   }
 }
