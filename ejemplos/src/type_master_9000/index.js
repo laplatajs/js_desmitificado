@@ -3,6 +3,7 @@ var type_masters_null,
     type_masters_nan,
     type_masters_cast,
     type_masters_tonumber,
+    type_masters_boolean,
     figlet,
     currentMasterIdx,
     typemasters = [];
@@ -13,12 +14,14 @@ type_masters_null = require( './modules/null_example' );
 type_masters_nan = require( './modules/nan_example' );
 type_masters_cast = require( './modules/coercion_example' );
 type_masters_tonumber = require( './modules/tonumber_example' );
+type_masters_boolean = require( './modules/boolean_example' );
 
 // preparation
 typemasters.push( type_masters_null );
 typemasters.push( type_masters_nan );
 typemasters.push( type_masters_cast );
 typemasters.push( type_masters_tonumber );
+typemasters.push( type_masters_boolean );
 
 currentMasterIdx = 0;
 
