@@ -9,10 +9,10 @@ var type_masters_null,
 
 // require'd
 figlet = require( 'figlet' );
-type_masters_null = require( 'null_example' );
-type_masters_nan = require( 'nan_example' );
-type_masters_cast = require( 'coercion_example' );
-type_masters_tonumber = require( 'tonumber_example' );
+type_masters_null = require( './modules/null_example' );
+type_masters_nan = require( './modules/nan_example' );
+type_masters_cast = require( './modules/coercion_example' );
+type_masters_tonumber = require( './modules/tonumber_example' );
 
 // preparation
 typemasters.push( type_masters_null );
@@ -38,7 +38,10 @@ figlet.text('Type Master 9000', {
 // some action
 module.exports.run = function ( idx ){
     idx = ( typeof idx === 'undefined' )? currentMasterIdx : idx;
-    console.log(idx)
+    if ( idx > typemasters.length ){
+        console.log( 'No existe ese ejemplo.' );
+        return;
+    }
     typemasters[ idx ].run();
 }
 
