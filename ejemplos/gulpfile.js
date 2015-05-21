@@ -13,7 +13,7 @@ gulp.task('serve', function () {
 
     // add browserSync.reload to the tasks array to make
     // all browsers reload after tasks are complete.
-    gulp.watch("src/*.js", browserSync.reload);
+    gulp.watch("src/**/*.js", browserSync.reload);
 });
 
 gulp.task('default', ['serve']);
