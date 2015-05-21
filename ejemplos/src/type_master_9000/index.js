@@ -2,6 +2,7 @@
 var type_masters_null,
     type_masters_nan,
     type_masters_cast,
+    type_masters_tonumber,
     figlet,
     currentMasterIdx,
     typemasters = [];
@@ -11,11 +12,13 @@ figlet = require( 'figlet' );
 type_masters_null = require( 'null_example' );
 type_masters_nan = require( 'nan_example' );
 type_masters_cast = require( 'coercion_example' );
+type_masters_tonumber = require( 'tonumber_example' );
 
 // preparation
 typemasters.push( type_masters_null );
 typemasters.push( type_masters_nan );
 typemasters.push( type_masters_cast );
+typemasters.push( type_masters_tonumber );
 
 currentMasterIdx = 0;
 
